@@ -12,6 +12,7 @@
     "lib"
   ],
   "main": "lib/index.js",
+  "bin": "lib/cli.js",
   "keywords": [
     ""
   ],
@@ -19,14 +20,16 @@
     "eslint": "^3.1.1",
     "eslint-config-xo-space": "^0.15.0",
     "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.0",
     "gulp-eslint": "^3.0.1",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-line-ending-corrector": "^1.0.1",
     "gulp-istanbul": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^3.0.1",
-    "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-plumber": "^1.0.0",
+    "yeoman-environment": "^1.6.6",
+    "yeoman-test": "^1.6.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -39,5 +42,9 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "pinkie-promise": "^2.0.1"
+  }
 }
